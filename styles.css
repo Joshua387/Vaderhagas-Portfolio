@@ -1,0 +1,1000 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: rgb(12, 12, 12);
+  color: rgb(240, 240, 240);
+}
+
+/* --------header ---------*/
+
+#header {
+  width: 100%;
+  height: 100vh;
+  background-image: url(images/nikita-kachanovsky-OVbeSXRk_9E-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.container {
+  padding: 30px 60px;
+}
+
+.logo {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+span {
+  color: rgb(93, 214, 245);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 10px 15px;
+  position: relative;
+}
+
+nav ul li a {
+  font-size: 15px;
+  font-weight: 600;
+  color: rgb(240, 240, 240);
+}
+
+#nav-bar i {
+  font-size: 20px;
+  color: rgb(240, 240, 240);
+  cursor: pointer;
+  display: none;
+}
+
+nav ul li a::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background: rgb(93, 214, 245);
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s ease;
+}
+
+nav i:hover {
+  cursor: pointer;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+.header-text {
+  text-align: center;
+  margin-top: 20%;
+}
+
+.header-text h1 {
+  font-size: 70px;
+  font-weight: 700;
+}
+
+.header-text p {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+/* --------about -----------*/
+#about {
+  padding: 6px 50px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 50px 0 0;
+}
+
+.about-col-1 {
+  flex-basis: 45%;
+}
+
+.about-col-1 img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.about-col-2 {
+  flex-basis: 45%;
+  margin-top: 20px;
+}
+
+.about-col-2 p {
+  font-size: 20px;
+  line-height: 25px;
+}
+
+.education {
+  font-size: 25px;
+
+  margin-top: 15px;
+}
+
+.education-row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.container-row-1 {
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-between;
+  flex-basis: 40%;
+}
+
+.container-empty-1 {
+  width: 1px;
+  height: 100px;
+  background-color: rgb(42, 42, 42);
+  position: relative;
+  /* margin-top: 40px; */
+}
+
+.container-row-1 p {
+  font-size: 15px;
+  font-weight: 600;
+  position: absolute;
+  top: 11px;
+  left: 20px;
+}
+
+.container-empty-2 {
+  width: 15px;
+  height: 15px;
+  background-color: rgb(12, 12, 12);
+  border: 2px solid rgb(42, 42, 42);
+  border-radius: 50%;
+  position: absolute;
+  top: 20px;
+  left: -7px;
+}
+
+.container-empty-3 {
+  width: 45px;
+  height: 2px;
+  background-color: rgb(42, 42, 42);
+  position: absolute;
+  top: 25px;
+  left: 120px;
+  flex-basis: 50%;
+}
+
+.container-row-2 {
+  margin: 0 0 0 80px;
+}
+
+.container-row-2 h4 {
+  font-size: 35px;
+  font-weight: 700;
+}
+
+.school {
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 10px;
+  line-height: 30px;
+}
+
+/* --------skills ------- */
+.sub-title {
+  text-align: center;
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.tab-contents {
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding: 20px;
+  /* width: 100%; */
+}
+
+#skills {
+  /* padding: 0 50px 10px; */
+  font-size: 25px;
+}
+
+.container-skill {
+  flex-basis: 24%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  color: rgb(240, 240, 240);
+  margin: 10px 0;
+  padding: 15px;
+  gap: 50px;
+  background-color: rgb(42, 42, 42);
+  box-shadow: rgb(31, 31, 31) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+/* .tab-contents {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 20%;
+  padding: 20px 50px;
+} */
+
+.empty {
+  border: 2px solid rgb(93, 214, 245);
+  margin: 0 auto;
+  width: 8%;
+}
+
+.container-skills {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.react {
+  padding: 22px 12px;
+}
+
+.php {
+  padding: 18px;
+}
+
+/* -------------Servics -------- */
+
+#services {
+  padding: 30px 0;
+}
+
+.services-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 40px;
+  margin-top: 50px;
+}
+
+.services-list div {
+  background: rgb(42, 42, 42);
+  font-size: 13px;
+  font-weight: 300;
+  border-radius: 16px;
+  transition: 0.5s;
+  box-shadow: rgb(31, 31, 31) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.services-list div {
+  padding: 40px;
+  font-size: 13px;
+  font-weight: 300;
+}
+
+.services-list i {
+  font-size: 50px;
+  margin-bottom: 20px;
+
+  transition: o.5s;
+}
+
+.services-list h2 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.services-list p {
+  font-size: 15px;
+}
+
+.services-list i {
+  color: rgb(93, 214, 245);
+}
+
+/* -------------Portfolio ------------- */
+
+#portfolio {
+  padding: 20px 0;
+}
+
+.work-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 40px;
+  margin-top: 50px;
+}
+
+.work-list img {
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+  transition: transform 0.5s;
+}
+
+.work {
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.layer {
+  width: 100%;
+  height: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgb(93, 214, 245));
+  border-radius: 10px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 40px;
+  text-align: center;
+  font-size: 14px;
+
+  transition: height 0.5s;
+}
+
+.layer h3 {
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.layer a {
+  margin: 20px;
+  color: rgb(93, 214, 245);
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 40px;
+  background-color: rgb(240, 240, 240);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.work:hover img {
+  transform: scale(1.1);
+}
+
+.work:hover .layer {
+  height: 100%;
+}
+
+/* -------------Contact ------------ */
+.contact-left {
+  flex-basis: 35%;
+  margin-top: 50px;
+}
+
+.contact-right {
+  flex-basis: 50%;
+}
+
+.contact-left p {
+  margin-top: 20px;
+}
+
+.contact-left p i {
+  color: rgb(93, 214, 245);
+  margin-right: 15px;
+  font-size: 20px;
+}
+
+.social-icons {
+  margin-top: 20px;
+}
+
+.social-icons a {
+  text-decoration: none;
+  font-size: 20px;
+  margin-right: 15px;
+  color: rgb(106, 105, 105);
+  display: inline-block;
+  transition: transform 0.5s;
+}
+
+.social-icons a:hover {
+  color: rgb(93, 214, 245);
+  transform: translateY(-5px);
+}
+
+.btn {
+  display: block;
+  margin: 50px 0;
+  width: fit-content;
+  border: 1px solid rgb(93, 214, 245);
+  padding: 12px 30px;
+  border-radius: 6px;
+  text-decoration: none;
+  color: rgb(240, 240, 240);
+  background: rgb(93, 214, 245);
+}
+
+.contact-right form {
+  width: 100%;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  border: none;
+  outline: none;
+  background: rgb(42, 42, 42);
+  padding: 15px;
+  margin: 10px 0;
+  color: rgb(240, 240, 240);
+  font-size: 18px;
+  border-radius: 6px;
+}
+
+form .btn {
+  font-size: 18px;
+  padding: 8px 20px;
+  margin: 15px 0;
+  cursor: pointer;
+}
+
+.copyright {
+  width: 100%;
+  text-align: center;
+  padding: 13px 0;
+  background: rgb(42, 42, 42);
+  font-weight: 300;
+  margin-top: 20px;
+  letter-spacing: 5px;
+}
+
+.copyright i {
+  color: rgb(93, 214, 245);
+}
+
+.top {
+  position: fixed;
+  bottom: 30px;
+  right: 40px;
+  z-index: 10;
+}
+
+.top i {
+  color: rgb(42, 42, 42);
+  font-size: 15px;
+  border-radius: 6px;
+  padding: 8px 10px;
+  background: rgb(240, 240, 240);
+}
+
+/* .open-menu {
+  right: 200px;
+} */
+
+@media screen and (max-width: 767px) {
+  #header {
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/nikita-kachanovsky-OVbeSXRk_9E-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+
+  .logo {
+    font-size: 25px;
+    font-weight: 600;
+  }
+
+  #sidemenu {
+    margin: 0;
+    background-color: rgb(93, 214, 245);
+    position: fixed;
+    top: 0;
+    right: -200px;
+    width: 200px;
+    height: 100vh;
+    padding-top: 50px;
+    z-index: 2;
+    transition: 0.5s;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 20px;
+    font-size: 20px;
+  }
+
+  #nav-bar i {
+    display: block;
+  }
+
+  #nav-bar .fa-x {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    cursor: pointer;
+  }
+
+  .header-text {
+    margin-top: 30%;
+  }
+
+  .header-text p {
+    text-align: center;
+    font-weight: 600;
+    font-size: 28px;
+  }
+
+  .header-text h1 {
+    font-size: 40px;
+    font-weight: 700;
+  }
+
+  /* ----------------About ----------- */
+
+  #about {
+    padding: 10px 0;
+  }
+
+  .empty {
+    border: 1px solid rgb(93, 214, 245);
+    margin: 0 auto;
+    width: 20%;
+  }
+
+  .container {
+    padding: 20px 35px;
+  }
+
+  .sub-title {
+    font-size: 30px;
+  }
+
+  .row {
+    display: block;
+    margin: 25px 0 0;
+  }
+
+  .container-empty-1 p {
+    font-size: 14px;
+  }
+
+  .about-col-1 {
+    width: 100%;
+  }
+
+  .about-col-2 {
+    width: 100%;
+  }
+
+  .about-col-2 p {
+    font-size: 15px;
+  }
+
+  .container-empty-3 {
+    width: 45px;
+    height: 2px;
+    background-color: rgb(42, 42, 42);
+    position: absolute;
+    top: 25px;
+    left: 100px;
+    flex-basis: 50%;
+  }
+
+  .education {
+    font-size: 18px;
+  }
+
+  .container-row-2 {
+    margin-left: 150px;
+  }
+
+  .container-row-2 h4 {
+    font-size: 20px;
+  }
+
+  /*-------------- Skills ----------- */
+
+  #skills {
+    padding: 0;
+  }
+
+  .tab-contents {
+    display: block;
+    width: 100%;
+    padding: 0;
+  }
+
+  .container-skills {
+    font-size: 15px;
+    font-weight: 600;
+    padding: 0;
+  }
+
+  /*--------------- Services ------------- */
+
+  #services {
+    padding: 0;
+  }
+
+  .services-list i {
+    font-size: 30px;
+  }
+
+  .services-list h2 {
+    font-size: 18px;
+  }
+
+  /*---------- Portfolio -------------- */
+  #portfolio {
+    padding: 0;
+  }
+
+  .work {
+    width: 100%;
+
+    background-position: center;
+    background-size: cover;
+  }
+
+  .work-list img {
+    width: 100%;
+  }
+
+  .layer {
+    padding: 0 50px;
+    text-align: center;
+    font-size: 14px;
+  }
+
+  .layer h3 {
+    margin: 0 0 5px;
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  .layer p {
+    font-size: 16px;
+    margin: 0;
+    line-height: 19px;
+  }
+
+  .layer a {
+    margin: 5px;
+    color: rgb(93, 214, 245);
+    text-decoration: none;
+    font-size: 10px;
+    line-height: 25px;
+    background-color: rgb(240, 240, 240);
+
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    text-align: center;
+  }
+
+  /*-------- Contact ---------- */
+
+  .contact-left {
+    /* text-align: center; */
+    margin: 10px 0 0;
+  }
+
+  .contact-left p {
+    font-size: 14px;
+    margin: 8px auto;
+  }
+
+  .contact-left p i {
+    font-size: 15px;
+    margin-right: 8px;
+  }
+
+  .btn {
+    margin: 18px 0;
+    padding: 8px 15px;
+    font-size: 14px;
+  }
+
+  form input,
+  form textarea {
+    width: 100%;
+    border: none;
+    outline: none;
+    background: rgb(42, 42, 42);
+    padding: 10px;
+    margin: 5px 0;
+    color: rgb(240, 240, 240);
+    font-size: 18px;
+    border-radius: 6px;
+  }
+
+  form::placeholder {
+    font-size: 14px;
+  }
+
+  form .btn {
+    font-size: 14px;
+    padding: 8px 18px;
+  }
+
+  .top {
+    position: fixed;
+    bottom: 30px;
+    right: 10px;
+    z-index: 10;
+  }
+
+  .top i {
+    color: rgb(42, 42, 42);
+    font-size: 12px;
+    padding: 5px 8px;
+    background: rgb(240, 240, 240);
+    border-radius: 6px;
+  }
+
+  /*-------- Footer -------- */
+  .copyright {
+    text-align: center;
+    font-size: 13px;
+    padding: 8px auto;
+    background: rgb(42, 42, 42);
+    font-weight: 300;
+    margin-top: 20px;
+    letter-spacing: 1px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  #header {
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/nikita-kachanovsky-OVbeSXRk_9E-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+
+  .container {
+    padding: 20px 40px;
+  }
+
+  .logo {
+    font-size: 32px;
+  }
+
+  nav ul li a {
+    font-size: 13px;
+    font-weight: 500;
+  }
+
+  .header-text {
+    margin-top: 5%;
+  }
+
+  .header-text h1 {
+    font-size: 45px;
+    font-weight: 700;
+    margin-top: 25%;
+  }
+
+  .header-text p {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 30px;
+  }
+
+  /* --------------About ----------- */
+
+  #about {
+    padding: 0;
+  }
+
+  .sub-title {
+    font-size: 35px;
+    font-weight: 700;
+  }
+
+  .about-col-1 {
+    flex-basis: 50%;
+  }
+
+  .about-col-1 img {
+    width: 100%;
+  }
+
+  .about-col-2 {
+    flex-basis: 45%;
+    margin-top: 0;
+  }
+
+  #about .about-col-2 p {
+    font-size: 15px;
+    line-height: 22px;
+  }
+
+  .education {
+    font-size: 15px;
+    font-weight: 700;
+    margin-top: 5px;
+  }
+
+  .education-row {
+    margin-top: 5px;
+  }
+
+  .container-row-2 {
+    margin-left: 40%;
+  }
+
+  .container-row-2 h4 {
+    font-size: 25px;
+    font-weight: 700;
+  }
+
+  /* --------------Skilla ----------- */
+  #skills {
+    padding: 0;
+  }
+
+  .tab-contents {
+    display: flex;
+    width: 100%;
+    padding: 0;
+  }
+
+  .container-skill {
+    flex-basis: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    color: rgb(240, 240, 240);
+    font-size: 18px;
+    font-weight: 600;
+    margin: 10px 0;
+    gap: 50px;
+    background-color: rgb(42, 42, 42);
+    box-shadow: rgb(31, 31, 31) 0px 6px 12px -2px,
+      rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    padding: 20px;
+  }
+
+  .react {
+    padding: 28px 12px;
+  }
+
+  .php {
+    padding: 23px;
+  }
+
+  /*---- Services --- */
+  #services {
+    padding: 0;
+  }
+
+  .services-content-1 {
+    flex-basis: 32%;
+    padding: 30px;
+  }
+
+  .services-content-2 {
+    flex-basis: 32%;
+    padding: 20px;
+  }
+
+  .services-content-3 {
+    flex-basis: 33%;
+    padding: 10px 20px;
+  }
+
+  .services-list i {
+    font-size: 25px;
+  }
+
+  .services-list h2 {
+    font-size: 16px;
+    margin-top: 0;
+  }
+
+  .services-list p {
+    font-size: 12px;
+  }
+
+  /* -------Portfolio ------- */
+
+  #portfolio {
+    padding: 0;
+  }
+
+  .layer h3 {
+    font-size: 14px;
+    margin-top: 0;
+    font-weight: 700;
+    line-height: 10px;
+  }
+
+  .layer p {
+    font-size: 12px;
+    margin-top: 0;
+  }
+
+  .layer a {
+    margin: 5px;
+    color: rgb(93, 214, 245);
+    text-decoration: none;
+    font-size: 10px;
+    line-height: 28px;
+    background-color: rgb(240, 240, 240);
+
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    text-align: center;
+  }
+
+  /*--------------Contact -------- */
+
+  .row {
+    margin-top: 30px;
+  }
+
+  .contact-left {
+    flex-basis: 40%;
+  }
+
+  .contact-right {
+    flex-basis: 55%;
+  }
+
+  .contact-left p i {
+    font-size: 16px;
+  }
+
+  .top {
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+    z-index: 10;
+  }
+
+  .top i {
+    color: rgb(42, 42, 42);
+    font-size: 15px;
+    padding: 5px 8px;
+    background: rgb(240, 240, 240);
+    border-radius: 6px;
+  }
+
+  /*----------- Footer --------- */
+
+  .copyright {
+    font-size: 18px;
+  }
+}
